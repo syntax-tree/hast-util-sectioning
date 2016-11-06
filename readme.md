@@ -10,12 +10,7 @@ Check if a [node][] is a [**sectioning**][spec] [element][].
 npm install hast-util-sectioning
 ```
 
-**hast-util-sectioning** is also available as an AMD, CommonJS, and
-globals module, [uncompressed and compressed][releases].
-
 ## Usage
-
-Dependencies:
 
 ```javascript
 var sectioning = require('hast-util-sectioning');
@@ -44,10 +39,6 @@ sectioning({
 
 Check if the given value is a [**sectioning**][spec] [element][].
 
-**Parameters**: `node` (`*`) — Value to check.
-
-**Returns**: `boolean`, whether `node` passes the test.
-
 ## License
 
 [MIT][license] © [Titus Wormer][author]
@@ -63,8 +54,6 @@ Check if the given value is a [**sectioning**][spec] [element][].
 [coverage-page]: https://codecov.io/github/wooorm/hast-util-sectioning?branch=master
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[releases]: https://github.com/wooorm/hast-util-sectioning/releases
 
 [license]: LICENSE
 
