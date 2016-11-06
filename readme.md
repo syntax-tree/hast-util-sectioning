@@ -19,52 +19,23 @@ Dependencies:
 
 ```javascript
 var sectioning = require('hast-util-sectioning');
-```
 
-Given a non-sectioning value:
+sectioning({
+  type: 'element',
+  tagName: 'a',
+  properties: {href: '#alpha', title: 'Bravo'},
+  children: [{type: 'text', value: 'Charlie'}]
+}); //=> false
 
-```javascript
-var result = sectioning({
-    'type': 'element',
-    'tagName': 'a',
-    'properties': {
-        'href': '#alpha',
-        'title': 'Bravo'
-    },
-    'children': [{
-        'type': 'text',
-        'value': 'Charlie'
-    }]
-});
-```
-
-Yields:
-
-```js
-false
-```
-
-Given a sectioning element:
-
-```javascript
-result = sectioning({
-    'type': 'element',
-    'tagName': 'article',
-    'children': [{
-        'type': 'element',
-        'tagName': 'p',
-        'children': [{
-            'type': 'text',
-            'value': 'Delta'
-        }]
-    }]
-});
-```
-
-Yields:
-
-```js
-true
+sectioning({
+  type: 'element',
+  tagName: 'article',
+  children: [{
+    type: 'element',
+    tagName: 'p',
+    children: [{type: 'text', value: 'Delta'}]
+  }]
+}); //=> true
 ```
 
 ## API

@@ -1,43 +1,20 @@
-/**
- * @author Titus Wormer
- * @copyright 2016 Titus Wormer
- * @license MIT
- * @module rehype:lint:util:sectioning
- */
-
 'use strict';
 
-/* eslint-env commonjs */
-
-/*
- * Dependencies.
- */
-
+/* Dependencies. */
 var is = require('hast-util-is-element');
 
-/*
- * Tag-names.
- */
+/* Expose. */
+module.exports = sectioning;
 
+/* Tag-names. */
 var names = [
-    'article',
-    'aside',
-    'nav',
-    'section'
+  'article',
+  'aside',
+  'nav',
+  'section'
 ];
 
-/**
- * Check if a node is a sectioning element
- *
- * @param {*} node - Thing to check.
- * @return {boolean} - Whether a node is sectioning.
- */
+/* Check if a node is a sectioning element */
 function sectioning(node) {
-    return is(node, names);
+  return is(node, names);
 }
-
-/*
- * Expose.
- */
-
-module.exports = sectioning;
