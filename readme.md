@@ -45,13 +45,13 @@ Check if the given value is a [**sectioning**][spec] [element][].
 
 <!-- Definition -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/hast-util-sectioning.svg
+[build-badge]: https://img.shields.io/travis/syntax-tree/hast-util-sectioning.svg
 
-[build-page]: https://travis-ci.org/wooorm/hast-util-sectioning
+[build-page]: https://travis-ci.org/syntax-tree/hast-util-sectioning
 
-[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/hast-util-sectioning.svg
+[coverage-badge]: https://img.shields.io/codecov/c/github/syntax-tree/hast-util-sectioning.svg
 
-[coverage-page]: https://codecov.io/github/wooorm/hast-util-sectioning?branch=master
+[coverage-page]: https://codecov.io/github/syntax-tree/hast-util-sectioning?branch=master
 
 [npm]: https://docs.npmjs.com/cli/install
 
@@ -59,8 +59,8 @@ Check if the given value is a [**sectioning**][spec] [element][].
 
 [author]: http://wooorm.com
 
-[node]: https://github.com/wooorm/hast#node
+[node]: https://github.com/syntax-tree/unist#node
 
-[element]: https://github.com/wooorm/hast#element
+[element]: https://github.com/syntax-tree/unist#element
 
 [spec]: https://html.spec.whatwg.org/#sectioning-content
