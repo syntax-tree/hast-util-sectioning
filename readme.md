@@ -13,24 +13,26 @@ npm install hast-util-sectioning
 ## Usage
 
 ```javascript
-var sectioning = require('hast-util-sectioning');
+var sectioning = require('hast-util-sectioning')
 
 sectioning({
   type: 'element',
   tagName: 'a',
   properties: {href: '#alpha', title: 'Bravo'},
   children: [{type: 'text', value: 'Charlie'}]
-}); //=> false
+}) // => false
 
 sectioning({
   type: 'element',
   tagName: 'article',
-  children: [{
-    type: 'element',
-    tagName: 'p',
-    children: [{type: 'text', value: 'Delta'}]
-  }]
-}); //=> true
+  children: [
+    {
+      type: 'element',
+      tagName: 'p',
+      children: [{type: 'text', value: 'Delta'}]
+    }
+  ]
+}) // => true
 ```
 
 ## API
