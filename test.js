@@ -1,10 +1,8 @@
 'use strict';
 
-/* Dependencies. */
 var test = require('tape');
-var sectioning = require('./index.js');
+var sectioning = require('.');
 
-/* Tests. */
 test('sectioning', function (t) {
   t.equal(
     sectioning(),
