@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-- lts/boron
-- node
+  - lts/dubnium
+  - node
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: releases
@@ -9,7 +9,7 @@ deploy:
   api_key:
     secure: hbFOPRFeMV9WUaennhML6k1Milr39rRWKLMLqgjPJKiA/pwTkmsIXJ8j2BIChzj3Qpq9Y32gRqkcWbBkhIGZX+t6BA7hmzZ1vu0RUl5FdR5xNdZ9Rj//AKjA8FFjV1hPwftGn93r9vL+5yYX65liVjdEcu98jCCWWtMM7kIHQ3kkoDadqh88saF1SqKwDI3SpfmJlcmcJx2PE3mwlKI5A0XN137CHIeX1uaCRwsys2YVf5PvFE6ZMDS0NW1rPgxo1ZYeIHA+LZ9Elqkm1z+/7HD1WwCyDmhxGdjPveG6LJiuLqndgPmnNdv3CrdcfY06L+XMJ5FL2s4qGIoErNgiOgT9XA/EGqf1gxstmPwAVWqYIpCDwG4YZ+TBpRVTJ81lQCLhoz12nMWuAUqO4GV4P7LyJeqE4DIUF8AItD5dK3Z4abf7MfjH8/IFvpE657NXDNzpVg9LYXCKid5CTImUutMllHg4aCaP3zFbmur2tgCOS+qtanb+4Qt612/rMtGrv0dhBLAcCih427fkFz9clF/6afFZEeHFXA3RkDz1pgC5LZoZo2rW19EQSjNWML2oqdMELT1iES3u1ufRMfjPPlDjQo82yyYhDbpH/u3t7xfd3Ec+M4/jMivbT/b12rIEsBoJjEA53O8UBdUVaO9S2TSxyOVp0LTqdsVYEpnVWyk=
   file:
-    - "hast-util-sectioning.js"
-    - "hast-util-sectioning.min.js"
+    - 'hast-util-sectioning.js'
+    - 'hast-util-sectioning.min.js'
   on:
     tags: true
