@@ -60,6 +60,11 @@ This project has a [Code of Conduct][coc].
 By interacting with this repository, organisation, or community you agree to
 abide by its terms.
 
+## Security
+
+`hast-util-sectioning` does not change the syntax tree so there are no openings
+for [cross-site scripting (XSS)][xss] attacks.
+
 ## License
 
 [MIT][license] © [Titus Wormer][author]
@@ -109,3 +114,5 @@ abide by its terms.
 [element]: https://github.com/syntax-tree/hast#element
 
 [spec]: https://html.spec.whatwg.org/#sectioning-content
+
+[xss]: https://en.wikipedia.org/wiki/Cross-site_scripting
