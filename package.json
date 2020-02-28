@@ -1,15 +1,17 @@
 {
   "name": "hast-util-sectioning",
   "version": "1.0.3",
-  "description": "Check if a node is a sectioning element",
+  "description": "hast utility to check if a node is a sectioning element",
   "license": "MIT",
   "keywords": [
+    "unist",
     "hast",
+    "hast-util",
+    "util",
+    "utility",
     "html",
     "category",
-    "sectioning",
-    "util",
-    "utility"
+    "sectioning"
   ],
   "repository": "syntax-tree/hast-util-sectioning",
   "bugs": "https://github.com/syntax-tree/hast-util-sectioning/issues",
