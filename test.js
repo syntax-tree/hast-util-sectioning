@@ -3,7 +3,7 @@
 var test = require('tape')
 var sectioning = require('.')
 
-test('sectioning', function(t) {
+test('sectioning', function (t) {
   t.equal(sectioning(), false, 'should return `false` without node')
 
   t.equal(sectioning(null), false, 'should return `false` with `null`')
