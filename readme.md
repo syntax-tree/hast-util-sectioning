@@ -50,16 +50,6 @@ sectioning({
 
 Check if the given value is a [*sectioning*][spec] [*element*][element].
 
-## Contribute
-
-See [`contributing.md` in `syntax-tree/.github`][contributing] for ways to get
-started.
-See [`support.md`][support] for ways to get help.
-
-This project has a [code of conduct][coc].
-By interacting with this repository, organization, or community you agree to
-abide by its terms.
-
 ## Related
 
 *   [`hast-util-is-element`](https://github.com/syntax-tree/hast-util-is-element)
@@ -93,6 +83,16 @@ abide by its terms.
 *   [`hast-util-whitespace`](https://github.com/syntax-tree/hast-util-whitespace)
     — check if a node is inter-element whitespace
 
+## Contribute
+
+See [`contributing.md` in `syntax-tree/.github`][contributing] for ways to get
+started.
+See [`support.md`][support] for ways to get help.
+
+This project has a [code of conduct][coc].
+By interacting with this repository, organization, or community you agree to
+abide by its terms.
+
 ## Security
 
 `hast-util-sectioning` does not change the syntax tree so there are no openings
@@ -104,9 +104,9 @@ for [cross-site scripting (XSS)][xss] attacks.
 
 <!-- Definition -->
 
-[build-badge]: https://img.shields.io/travis/syntax-tree/hast-util-sectioning.svg
+[build-badge]: https://github.com/syntax-tree/hast-util-sectioning/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/syntax-tree/hast-util-sectioning
+[build]: https://github.com/syntax-tree/hast-util-sectioning/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/syntax-tree/hast-util-sectioning.svg
 
