@@ -1,11 +1,5 @@
 'use strict'
 
-var is = require('hast-util-is-element')
+var convert = require('hast-util-is-element/convert')
 
-module.exports = sectioning
-
-var names = ['article', 'aside', 'nav', 'section']
-
-function sectioning(node) {
-  return is(node, names)
-}
+module.exports = convert(['article', 'aside', 'nav', 'section'])
