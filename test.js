@@ -1,7 +1,5 @@
-'use strict'
-
-var test = require('tape')
-var sectioning = require('.')
+import test from 'tape'
+import {sectioning} from './index.js'
 
 test('sectioning', function (t) {
   t.equal(sectioning(), false, 'should return `false` without node')

@@ -1,8 +1,5 @@
 .DS_Store
 *.log
-.nyc_output/
 coverage/
 node_modules/
-hast-util-sectioning.js
-hast-util-sectioning.min.js
 yarn.lock

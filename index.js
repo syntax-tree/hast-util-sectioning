@@ -1,5 +1,3 @@
-'use strict'
+import {convertElement} from 'hast-util-is-element'
 
-var convert = require('hast-util-is-element/convert')
-
-module.exports = convert(['article', 'aside', 'nav', 'section'])
+export const sectioning = convertElement(['article', 'aside', 'nav', 'section'])

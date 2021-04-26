@@ -1,5 +1,2 @@
 coverage/
-hast-util-sectioning.js
-hast-util-sectioning.min.js
-*.json
 *.md
