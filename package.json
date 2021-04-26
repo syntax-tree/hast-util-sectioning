@@ -1,6 +1,6 @@
 {
   "name": "hast-util-sectioning",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "hast utility to check if a node is a sectioning element",
   "license": "MIT",
   "keywords": [
