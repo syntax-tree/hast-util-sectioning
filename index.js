@@ -9,5 +9,5 @@ import {convertElement} from 'hast-util-is-element'
  * Check if a node is a sectioning element.
  * @type {AssertSectioning}
  */
-// @ts-ignore Sure, the assertion matches.
+// @ts-expect-error Sure, the assertion matches.
 export const sectioning = convertElement(['article', 'aside', 'nav', 'section'])
