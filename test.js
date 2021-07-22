@@ -1,7 +1,7 @@
 import test from 'tape'
 import {sectioning} from './index.js'
 
-test('sectioning', function (t) {
+test('sectioning', (t) => {
   t.equal(sectioning(), false, 'should return `false` without node')
 
   t.equal(sectioning(null), false, 'should return `false` with `null`')
