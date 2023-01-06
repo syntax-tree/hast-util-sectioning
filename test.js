@@ -1,24 +1,25 @@
-import test from 'tape'
+import assert from 'node:assert/strict'
+import test from 'node:test'
 import {sectioning} from './index.js'
 
-test('sectioning', (t) => {
-  t.equal(sectioning(), false, 'should return `false` without node')
+test('sectioning', () => {
+  assert.equal(sectioning(), false, 'should return `false` without node')
 
-  t.equal(sectioning(null), false, 'should return `false` with `null`')
+  assert.equal(sectioning(null), false, 'should return `false` with `null`')
 
-  t.equal(
+  assert.equal(
     sectioning({type: 'text'}),
     false,
     'should return `false` when without `element`'
   )
 
-  t.equal(
+  assert.equal(
     sectioning({type: 'element'}),
     false,
     'should return `false` when with invalid `element`'
   )
 
-  t.equal(
+  assert.equal(
     sectioning({
       type: 'element',
       tagName: 'a',
@@ -29,7 +30,7 @@ test('sectioning', (t) => {
     'should return `false` when without not sectioning'
   )
 
-  t.equal(
+  assert.equal(
     sectioning({
       type: 'element',
       tagName: 'article',
@@ -44,6 +45,4 @@ test('sectioning', (t) => {
     true,
     'should return `true` when with sectioning'
   )
-
-  t.end()
 })
