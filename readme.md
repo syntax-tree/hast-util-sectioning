@@ -218,6 +218,6 @@ abide by its terms.
 
 [element]: https://github.com/syntax-tree/hast#element
 
-[spec]: https://html.spec.whatwg.org/#sectioning-content
+[spec]: https://html.spec.whatwg.org/multipage/dom.html#sectioning-content
 
 [xss]: https://en.wikipedia.org/wiki/Cross-site_scripting
