@@ -8,7 +8,7 @@
 [![Backers][backers-badge]][collective]
 [![Chat][chat-badge]][chat]
 
-[hast][] utility to check if a node is [*sectioning*][spec].
+[hast][] utility to check if a node is [*sectioning content*][spec].
 
 ## Contents
 
@@ -17,7 +17,7 @@
 *   [Install](#install)
 *   [Use](#use)
 *   [API](#api)
-    *   [`sectioning(node)`](#sectioningnode)
+    *   [`sectioning(value)`](#sectioningvalue)
 *   [Types](#types)
 *   [Compatibility](#compatibility)
 *   [Security](#security)
@@ -38,7 +38,7 @@ looking for!
 ## Install
 
 This package is [ESM only][esm].
-In Node.js (version 12.20+, 14.14+, 16.0+, or 18.0+), install with [npm][]:
+In Node.js (version 14.14+ and 16.0+), install with [npm][]:
 
 ```sh
 npm install hast-util-sectioning
@@ -85,20 +85,22 @@ sectioning({
 
 ## API
 
-This package exports the identifier `sectioning`.
+This package exports the identifier [`sectioning`][sectioning].
 There is no default export.
 
-### `sectioning(node)`
+### `sectioning(value)`
 
-Check if the given value is a [*sectioning*][spec] [*element*][element].
+Check if the given value is a [*sectioning content*][spec].
 
 ###### Parameters
 
-*   `node` ([`Node`][node]) — node to check
+*   `value` (`unknown`) — thing to check (typically [`Node`][node])
 
 ###### Returns
 
-Whether `node` is sectioning content (`boolean`).
+Whether `value` is an element considered sectioning content.
+
+The elements `article`, `aside`, `nav`, and `section` are sectioning.
 
 ## Types
 
@@ -109,7 +111,7 @@ It exports no additional types.
 
 Projects maintained by the unified collective are compatible with all maintained
 versions of Node.js.
-As of now, that is Node.js 12.20+, 14.14+, 16.0+, and 18.0+.
+As of now, that is Node.js 14.14+ and 16.0+.
 Our projects sometimes work with older versions, but this is not guaranteed.
 
 ## Security
@@ -216,8 +218,8 @@ abide by its terms.
 
 [node]: https://github.com/syntax-tree/hast#nodes
 
-[element]: https://github.com/syntax-tree/hast#element
-
 [spec]: https://html.spec.whatwg.org/multipage/dom.html#sectioning-content
 
 [xss]: https://en.wikipedia.org/wiki/Cross-site_scripting
+
+[sectioning]: #sectioningvalue
