@@ -1,8 +1,15 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import {sectioning} from './index.js'
+import * as mod from './index.js'
 
 test('sectioning', () => {
+  assert.deepEqual(
+    Object.keys(mod).sort(),
+    ['sectioning'],
+    'should expose the public api'
+  )
+
   assert.equal(sectioning(), false, 'should return `false` without node')
 
   assert.equal(sectioning(null), false, 'should return `false` with `null`')
