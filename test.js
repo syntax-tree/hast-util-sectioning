@@ -10,6 +10,7 @@ test('sectioning', () => {
     'should expose the public api'
   )
 
+  // @ts-expect-error: check how a missing `node` is handled.
   assert.equal(sectioning(), false, 'should return `false` without node')
 
   assert.equal(sectioning(null), false, 'should return `false` with `null`')
