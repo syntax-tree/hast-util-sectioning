@@ -47,14 +47,14 @@ npm install hast-util-sectioning
 In Deno with [`esm.sh`][esmsh]:
 
 ```js
-import {sectioning} from 'https://esm.sh/hast-util-sectioning@2'
+import {sectioning} from 'https://esm.sh/hast-util-sectioning@3'
 ```
 
 In browsers with [`esm.sh`][esmsh]:
 
 ```html
 <script type="module">
-  import {sectioning} from 'https://esm.sh/hast-util-sectioning@2?bundle'
+  import {sectioning} from 'https://esm.sh/hast-util-sectioning@3?bundle'
 </script>
 ```
 
